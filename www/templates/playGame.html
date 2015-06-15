@@ -1,0 +1,25 @@
+<ion-view view-title="{{message}}">
+  <ion-content>
+	<!-- <div class="item no-border no-bg"> -->
+	<div class="list card some-margin" collection-repeat="card in cards"  item-height="33%" item-width="31%">
+
+	  <div class="item little-padding text-center">
+		<h2>{{card}}</h2>
+	  </div>
+
+	  <div class="item item-image little-padding">
+	    <img ng-src="img/{{card}}.png">
+	  </div>
+	  <!-- <div class="button-bar no-bg little-padding">
+	  	 <a class="item button button-icon" href="#">
+	    	<i class="icon ion-ios-information-outline"></i>
+	  	</a>
+	  	 <a class="item button button-icon" href="#">
+	    	<i class="icon ion-ios-circle-outline"></i>
+	  	</a>
+	</div> -->
+	
+	</div>
+	<!-- </div> -->
+  </ion-content>
+</ion-view>

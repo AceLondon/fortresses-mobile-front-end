@@ -1,0 +1,22 @@
+<ion-view view-title="Create Game">
+	<ion-content>
+		<ion-list>
+			<ion-item>
+				<button class="button button-stable right" ng-click="createNewGame()">
+					New Game
+				</button>
+			</ion-item>
+			<form class="item item-input-inset">
+				<label class="item-input-wrapper">
+					<input type="text" placeholder="Past Game ID Here" ng-model="gameId">
+				</label>
+			</form>
+			<ion-item>
+				<h2 class="left">{{gameId}}</h2>
+				<button class="button button-stable right" ng-click="setGameId(gameId)">
+				  Join Game
+				</button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

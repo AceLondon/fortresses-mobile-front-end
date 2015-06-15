@@ -1,0 +1,72 @@
+/* Empty. Add your own CSS if you like */
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.center {
+	float: center;
+}
+
+.text-center{
+	text-align:center;
+}
+
+.full-body{
+	height:70vh;
+}
+
+.add-user-form{
+	padding-top:80px;
+}
+
+.bg-image{
+    display: block;
+	position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	width: 100%;
+    height: auto;
+}
+
+.no-bg{ background-color: transparent !important }
+.bg-30{
+	background-color: rgba(0,0,0,0.3) !important;
+	color:white;
+}
+
+.no-border{
+	border:0px !important;
+}
+
+.some-padding{
+	margin-bottom:21px;
+}
+
+.some-margin{
+	margin:2px;
+}
+
+.little-padding{
+	padding: 4px !important;
+}
+
+.start-button-div{
+	text-align: center; 
+	position:absolute;
+	bottom:10%;
+	left: 30%;
+	right:30%;
+}
+
+.columns {
+  -webkit-column-count: 2;
+  column-count: 2;
+}

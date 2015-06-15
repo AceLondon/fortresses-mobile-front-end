@@ -1,0 +1,41 @@
+<ion-view view-title="Add User">
+  	<ion-content has-bouncing="false">
+		<div class="list card">
+
+		  <div class="item">
+			<h2>Game ID: {{gameId}}</h2>
+		  </div>
+
+		  <div class="item item-body no-bg full-body">
+		    <img class="full-image bg-image" src="img/fortresses.jpg">
+			<form class="item item-input-inset no-bg add-user-form no-border">
+				<label class="item-input-wrapper">
+					<input type="text" placeholder="User Name" ng-model="userId">
+				</label>
+			
+				<button class="button button-stable right" ng-click="addUser(userId)">
+					Add
+				</button>
+			</form>
+			<div class="item columns no-border no-bg" ng-show="start">
+				<div class="bg-30 no-border text-center some-padding" ng-repeat="player in players">
+					{{$index+1}} - {{player.userId}}
+				</div>
+			</div>
+			<div ng-show="start" class="start-button-div">
+				<button class="button button-stable center" ng-click="startGame()">
+					Start the game
+				</button>
+			</div>
+		  </div>
+
+		  <div class="item tabs tabs-secondary tabs-icon-left no-bg">
+		    <a class="tab-item" href="#">
+		      <i class="icon ion-share"></i>
+		      Invite a Friend to play
+		    </a>
+		  </div>
+
+		</div>
+  	</ion-content>
+</ion-view>
